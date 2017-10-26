@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace lab4
 {
@@ -18,10 +19,20 @@ namespace lab4
                 Name = "Garfield"
             };
 
-            cat1.MakeNoise();
-            cat2.MakeNoise();
-            cat3.MakeNoise();
+            var catsList = new List<Kitty>();
+            catsList.Add(cat1);
+            catsList.Add(cat2);
+            catsList.Add(cat3);
 
+            for(var i = 0; i<catsList.Count; i++)
+            {
+                catsList[i].MakeNoise();
+            }
+
+            foreach(var cat in catsList)
+            {
+                cat.MakeNoise();
+            }
 
         }
 
