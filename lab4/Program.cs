@@ -7,7 +7,7 @@ namespace lab4
         static void Main(string[] args)
         {
             Console.WriteLine("Hello Kitty!");
-            Console.WriteLine("Emese!");
+            Console.WriteLine("Emese! edited");
         }
     }
 }
