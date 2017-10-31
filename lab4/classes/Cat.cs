@@ -8,4 +8,9 @@ public class Cat : IAnimal
     {
          Console.WriteLine(Name + " says Miau");
     }
+
+    public string Eat()
+    {
+        return "mice";
+    }
 }

@@ -7,6 +7,7 @@ namespace lab4
     {
         static void Main(string[] args)
         {
+
             var cat1 = new Cat(){
                 Name = "Tomas"
             };
@@ -23,15 +24,23 @@ namespace lab4
                 Name = "Totto"
             };
 
-            var catsList = new List<Cat>();
-            catsList.Add(cat1);
-            catsList.Add(cat2);
-            catsList.Add(cat3);
+             var hamster = new Hamster() {
+                Name = "Hamsty"
+            };
 
-            foreach(var cat in catsList)
+            var animalList = new List<IAnimal>();
+            animalList.Add(cat1);
+            animalList.Add(cat2);
+            animalList.Add(cat3);
+            animalList.Add(dog1);
+            animalList.Add(hamster);
+
+
+            foreach(var animal in animalList)
             {
-                cat.MakeNoise();
+                animal.MakeNoise();
             }
+
 
         }
     }

@@ -7,4 +7,9 @@ public class Dog : IAnimal
     {
         Console.WriteLine(Name + " says Ham");
     }
+
+    public string Eat()
+    {
+        return "cats";
+    }
 }
