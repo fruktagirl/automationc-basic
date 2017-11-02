@@ -12,6 +12,9 @@ namespace lab4
                 Name = "Tomas"
             };
 
+
+            cat1.Breath();
+
             var cat2 = new Cat(){
                 Name = "Viorel"
             };
@@ -28,7 +31,7 @@ namespace lab4
                 Name = "Hamsty"
             };
 
-            var animalList = new List<IAnimal>();
+            var animalList = new List<AnimalBase>();
             animalList.Add(cat1);
             animalList.Add(cat2);
             animalList.Add(cat3);
@@ -38,7 +41,8 @@ namespace lab4
 
             foreach(var animal in animalList)
             {
-                animal.MakeNoise();
+                animal.Breath();
+                animal.Bites();
             }
 
 

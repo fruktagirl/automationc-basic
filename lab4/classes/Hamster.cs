@@ -1,8 +1,14 @@
 using System;
 
-public class Hamster : IAnimal
+public class Hamster : AnimalBase, IAnimal
 {
     public string Name { get; set; }
+
+    public override void Bites()
+    {
+        Console.WriteLine("Fatal bite");
+    }
+
     public string Eat()
     {
        return "carrot";
